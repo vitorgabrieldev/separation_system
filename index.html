@@ -23,24 +23,38 @@
 </head>
 <body>
     <!-- -- | -- Views -- | -- -->
-    <div class="px-4 py-5 my-5 text-center">
-        <i class="bi bi-dice-5-fill iconHeader"></i>
-        <h1 class="display-5 fw-bold text-body-emphasis titlePage">Automatic Separation</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Separate items, people and everything you need in a practical and fast way!</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-                <i class="bi bi-arrow-right-short"></i>
-                Start
-            </button>
-            <a href="#">
-                <button type="button" class="btn btn-outline-secondary btn-dark btn-lg px-4">
-                    <i class="bi bi-github"></i>
-                    Github
+    <header>
+        <div class="px-4 py-5 my-5 text-center">
+            <i class="bi bi-dice-5-fill iconHeader"></i>
+            <h1 class="display-5 fw-bold text-body-emphasis titlePage">Automatic Separation</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Separate items, people and everything you need in a practical and fast way!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                    Start
+                    <i class="bi bi-arrow-right-short"></i>
                 </button>
-            </a>
-          </div>
+                <a href="https://github.com/vitorgabrieldev/separation_system">
+                    <button type="button" class="btn btn-outline-secondary btn-dark btn-lg px-4">
+                        <i class="bi bi-github"></i>
+                        Github
+                    </button>
+                </a>
+            </div>
+            </div>
         </div>
-    </div>
+    </header>
+    <hr>
+    <main class="board">
+        <form class="form">
+            <h1>Type below to add:</h1>
+            <div class="containerInput">
+                <input type="text" placeholder="Itens" class="inputAdd" spellcheck="false">
+                <button class="btnAdd" type="button">
+                    <i class="bi bi-arrow-right-short"></i>
+                </button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

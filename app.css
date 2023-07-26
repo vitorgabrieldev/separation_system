@@ -23,3 +23,7 @@ body, html {
 .btn-dark {
     color: #f5f5f5 !important;
 }
+.board {
+    background: rgba(90, 89, 89, 0.185);
+    padding: 1rem 2rem;
+}
