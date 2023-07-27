@@ -1,59 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(240, 239, 239);
-}
-* {
-    font-family: 'K2D', sans-serif;
-}
-.iconHeader {
-    font-size: 4rem;
-    color: #f5f5f5;
-    background: rgb(41, 39, 39);
-    padding: .8rem 1.6rem;
-    border-radius: 12px;
-}
-.titlePage::first-letter {
-    font-size: 5rem;
-    color: rgb(78, 77, 77);
-}
-.btn-dark {
-    color: #f5f5f5 !important;
-}
-.board {
-    background: rgba(90, 89, 89, 0.185);
-    padding: 1rem 2rem;
-}
-.form {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    background: #e9e8e8;
+    padding: 1rem 0;
 }
-.containerInput {
-    background: rgb(209, 209, 209);
-    border: 1px solid #888;
-    padding: .5rem;
-    border-radius: 5px;
+* {
+    font-family: 'Poppins', sans-serif;
 }
-.inputAdd {
-    background: transparent;
-    border: none;
+.inputItem,
+.inputQtd,
+.inputValue {
+    font-size: 1.5rem;
     outline: none;
-    font-size: 2rem;
+    padding: .3rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+}
+.inputQtd {
+    width: 150px;
+}
+.inputValue {
+    width: 150px;
 }
 .btnAdd {
-    background: none;
-    border: none;
-    font-size: 2rem;
+    border: 1px solid #888;
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
     transition: .33s;
-    padding: .3rem;
-    border-radius: .3rem;
-    color: rgb(114, 113, 113);
+    cursor: pointer;
 }
 .btnAdd:hover {
-    background: rgba(48, 47, 47, 0.616);
+    background: #888;
+    color: #f5f5f5;
+}
+
+.itemList {
+    border: 1px solid #a1a1a1;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+table {
+    width: 100%;
+}
+th {
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+.itemAction {
+    width: 200px;
+}
+.itemAction > i {
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .33s;
+}
+.itemAction > i:nth-child(1) {
+    background: rgb(218, 44, 44);
+    color: #f5f5f5;
+}
+.itemAction > i:nth-child(2) {
+    background: rgba(59, 59, 58, 0.603);
     color: #f5f5f5;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>Random Students</title>    
+    <title>Lista de compra</title>    
     
     <!-- -- | --Require Meta Tags -- | -- -->
     <meta charset='utf-8'>
@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
     <!-- -- | -- Style Sheets -- | -- -->
     <link rel="stylesheet" href="./app.css">
 
@@ -23,41 +25,34 @@
 </head>
 <body>
     <!-- -- | -- Views -- | -- -->
-    <header>
-        <div class="px-4 py-5 my-5 text-center">
-            <i class="bi bi-dice-5-fill iconHeader"></i>
-            <h1 class="display-5 fw-bold text-body-emphasis titlePage">Automatic Separation</h1>
-            <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Separate items, people and everything you need in a practical and fast way!</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-                    Start
-                    <i class="bi bi-arrow-right-short"></i>
-                </button>
-                <a href="https://github.com/vitorgabrieldev/separation_system">
-                    <button type="button" class="btn btn-outline-secondary btn-dark btn-lg px-4">
-                        <i class="bi bi-github"></i>
-                        Github
-                    </button>
-                </a>
-            </div>
-            </div>
+    <div class="board">
+        <h1 class="title-board">Lista de Compras</h1>
+        <div class="shopping-list">
+            <input type="text" id="itemName" class="inputItem" placeholder="Digite o item">
+            <input type="number" id="itemQtd" class="inputQtd" placeholder="Qtd">
+            <input type="number" id="itemValue" class="inputValue" placeholder="R$(Opc)">
+            <button type="button" class="btnAdd" id="btnAdd">Adicionar</button>
         </div>
-    </header>
-    <hr>
-    <main class="board">
-        <form class="form">
-            <div class="containerInput">
-                <input type="text" placeholder="Itens" class="inputAdd" spellcheck="false">
-                <button class="btnAdd" type="button">
-                    <i class="bi bi-plus"></i>
-                </button>
-            </div>
-            <div class="containerBtnsFunctions">
-                <i class="bi bi-trash-fill"></i>
-            </div>
-        </form>
         <hr>
-    </main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="itemList">Nome</th>
+                    <th class="itemList">Quantidade</th>
+                    <th class="itemList">Valor</th>
+                    <th class="itemList itemAction">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="boardList"></tbody>
+            <tfoot>
+                <tr>
+                    <td class="itemList">Itens : 0</td>
+                    <td class="itemList"></td>
+                    <td class="itemList">Total : R$ 00,00</td>
+                    <td class="itemList"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
