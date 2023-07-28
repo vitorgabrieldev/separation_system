@@ -16,6 +16,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- -- | -- Style Sheets -- | -- -->
     <link rel="stylesheet" href="./app.css">
 
@@ -29,7 +31,7 @@
         <h1 class="title-board">Lista de Compras</h1>
         <div class="shopping-list">
             <input type="text" id="itemName" class="inputItem" placeholder="Digite o item">
-            <input type="number" id="itemQtd" class="inputQtd" placeholder="Qtd">
+            <input type="number" id="itemQtd" class="inputQtd" placeholder="Qtd(Opc)">
             <input type="number" id="itemValue" class="inputValue" placeholder="R$(Opc)">
             <button type="button" class="btnAdd" id="btnAdd">Adicionar</button>
         </div>
@@ -44,12 +46,13 @@
                 </tr>
             </thead>
             <tbody id="boardList"></tbody>
+        </table>
+        <br>
+        <table>
             <tfoot>
                 <tr>
-                    <td class="itemList">Itens : 0</td>
-                    <td class="itemList"></td>
-                    <td class="itemList">Total : R$ 00,00</td>
-                    <td class="itemList"></td>
+                    <td class="itemList" id="qtdItens">Itens : 0</td>
+                    <td class="itemList" id="totalItens">Total : R$ 00,00</td>
                 </tr>
             </tfoot>
         </table>
