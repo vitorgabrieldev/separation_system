@@ -25,3 +25,10 @@ Sistema de criação e edição de lista de super mercado.
 - Adicionar itens na lista
 - Remover itens da lista de compra
 - Editar itens da lista de compra
+
+**Tela incial**
+
+![App Screenshot](https://raw.githubusercontent.com/vitorgabrieldev/imgs_readmes/main/Captura%20de%20tela%202023-08-01%20112648.png)
+
+**Lista com item**
+![App Screenchot](https://raw.githubusercontent.com/vitorgabrieldev/imgs_readmes/main/Captura%20de%20tela%202023-08-01%20112809.png)
