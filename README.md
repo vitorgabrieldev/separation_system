@@ -13,7 +13,7 @@ Sistema de criação e edição de lista de super mercado.
 - Css3
 - Javascript
 
-**🖥️Flameworks**
+**🖥️Frameworks**
 - Bootstrap 5.2
 - Bootstrap Icons
 
